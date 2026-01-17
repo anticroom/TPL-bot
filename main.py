@@ -11,7 +11,6 @@ from dotenv import load_dotenv
 from fuzzywuzzy import fuzz
 import pyperclip
 import req
-req.main()
 # --- CONFIGURATION ---
 load_dotenv()
 TOKEN = os.getenv('TOKEN')
@@ -407,3 +406,4 @@ async def guess_level(ctx):
         active_channels.discard(ctx.channel.id)
 
 bot.run(TOKEN)
+req.main()
