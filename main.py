@@ -10,7 +10,8 @@ import math
 from dotenv import load_dotenv
 from fuzzywuzzy import fuzz
 import pyperclip
-
+import req
+req.main()
 # --- CONFIGURATION ---
 load_dotenv()
 TOKEN = os.getenv('TOKEN')
